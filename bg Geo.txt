@@ -1,0 +1,11 @@
+Chrisyea, that's dead
+https://github.com/transistorsoft/cordova-background-geolocation-lt <-- new repo
+new plugin ID:  https://github.com/transistorsoft/cordova-background-geolocation-lt/blob/master/plugin.xml#L5
+New:  com.transistorsoft.cordova.background-geolocation
+Dead:  org.transistorsoft.cordova.background-geolocation
+You are confused
+PhoneGap Build Installation:  https://github.com/transistorsoft/cordova-background-geolocation-lt/wiki/PhoneGap-Build-Installation
+
+
+de.bussedesign.cordova.background-geolocation
+		<gap:plugin name="de.bussedesign.cordova.background-geolocation" spec="1.3.0" source="pgb" />

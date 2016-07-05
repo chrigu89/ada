@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+	<title>AdA Go</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+	
+	<link href="style/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="style/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="style/style.css" rel="stylesheet" type="text/css">
+	<link href="style/swipe.css" rel="stylesheet" type="text/css">
+	
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-min.js" type="text/javascript"></script>
+		
+	<script src="js/swipe.js" type="text/javascript"></script>
+	
+	<script src="cordova.js"></script>
+	<script type="text/javascript" src="PushNotification.js"></script>
+		
+</head>
+<body>
+
+<div id="home">
+	<div id="app-status-div">
+		<ul id="app-status-ul">
+		</ul>
+	</div>
+</div>
+
+<a id="load_" class="loader_img"></a>
+
+<div id="offline">
+	Sie sind zurzeit offline!
+</div>
+
+<div id="top_title">
+	<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+	Abseits der Autobahn
+</div>
+
+<div id="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 center">
+				<div class="content">
+					<div class="scroll-wrapper">
+					<iframe src="http://ada-go.com/app/" style="border: 0px;" scrolling="yes" frameborder="0"></iframe>	
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	 
+</div><!--content -->
+<script type="text/javascript">
+$(window).ready(function() {	
+
+    xHeight = window.innerHeight;
+	xHeight = xHeight - 110;
+    $(".content iframe").css({
+        "height": xHeight
+    });
+	
+    xWidth = window.innerWidth;
+	xWidth = xWidth - 40;
+    $(".content iframe").css({
+        "width": xWidth
+    });
+
+
+});
+</script>
+<script src="cordova.js"></script>
+<script src="js/app.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Fatal error: Call to undefined method nCORE_catalog::saveValues() in /home3/www/b75/server3-webentwicklungsserver/_nCoreV26/flordelavida/modules/catalog/admin/products/save.php on line 21 
+
+sendAjax('module/GoogleMaps/toggle/','token=');
+
+1. Token 
+
+sendRequest(token,id,distance)
+
+Log und Lat in App eintragen
+
+
+Projekt-ID: nifty-byway-789
+Projektnummer (SenderID): 614620512453
+API-Key AIzaSyAuXHRgg2fd0aSaJo6aGhPTLA9jnzcWZ-k

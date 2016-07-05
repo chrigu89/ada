@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+
+html, body {
+	-webkit-text-size-adjust: none;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0px;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Oswald', Arial, sans-serif;
+	background-color: #fff;
+	width: 100%;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 19px;
+
+}
+.container-fluid {
+	max-width: 680px;
+}
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+		line-height: 18px;
+	
+	}
+}
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: transparent;
+}
+#load_ {
+	position: fixed;
+	z-index: 99999;
+	background-color: #F4F3F3;
+	width: 100%;
+	height: 100%;
+}
+
+.loader_img {
+	background: url(../images/ajax-loader_gross.gif) no-repeat center center;
+	min-height: 32px;
+	min-width: 32px;
+}
+
+.overlay {
+	background-color: rgba(255,255,255,0.6) !important;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+	table tr td.top, table.top tr td {
+		vertical-align: top;
+	}
+	table tr td.center {
+		text-align: center;
+	}
+::selection {
+	background-color: none;
+}
+
+
+.center {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+	
+	h1, h2 {
+		color: #333333;
+		font-weight: 300;
+		font-size: 60px;
+		line-height: 100px;
+	}
+
+
+.clr {
+	clear: both;
+	height: 1px !important;
+}
+
+
+#content {
+	position: relative;
+	opacity: 0;
+	z-index: 2;
+}
+
+
+	
+#top_title {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 28px;
+	font-weight: 300;
+}
+	.home {
+		float: left;
+		color: #fff;
+		font-size: 40px;
+		margin-left: 10px;
+	}
+
+
+#offline {
+	display: none;
+	background: rgba(255, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 300;
+	position: relative;
+	width: 100%;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+}
+
+
+.fa-home:before {
+    content: "";
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.content {
+	position: fixed;
+	top: 80px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	z-index: 10;
+	-webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
+}
+	.content h2 {
+		margin: 20px 0;
+	}
+	
+	.content .distance {
+		float: right;
+	}
+	.content .status, .content .category {
+		float: right;
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		width: 30%;
+		max-width: 75px;
+		height: 30px;
+		margin-left: 10px;
+	}
+		.content .status.off, .content .category.off {
+			background-image: url(../images/icon/off.png);
+		}
+		.content .status.on, .content .category.on {
+			background-image: url(../images/icon/on.png);
+		}
+	
+.content iframe {
+	position: relative;
+	z-index: 11;
+}
+
+#pushs ul {
+	padding: 0 0 0 15px;
+}
+
+
+.col-xs-6 {
+	margin: 15px 0;
+}
+.icon {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	
+	background: rgba(255, 255, 255, 0.3);
+	background-position: center center;
+	background-size: 35% auto;
+	background-repeat: no-repeat;
+	border: 3px solid #ffffff;
+	
+	border-radius: 50% 50%;
+	-webkit-border-radius: 50% 50%;
+	
+	font-size: 400%;
+	
+	margin: 15px 0;
+	position: relative;
+	text-align: center;
+	color: #35333a;
+}
+	.icon span {
+		font-size: 30%;
+	}
+	.icon span span {
+		font-size: 100%;
+	}
+	.icon.search {
+		background-image: url(../images/start/search.png);
+	}
+	.icon.around {
+		background-image: url(../images/start/around.png);
+	}
+	.icon.catalog {
+		background-image: url(../images/start/catalog.png);
+	}
+	.icon.gps {
+		background-color: #d32f2f;
+	}
+		.icon.gps.online {
+			background-color: #27b363;
+		}
+		.icon.gps .ein {
+			display: none;
+		}
+			.icon.gps.online .ein {
+				display: inline;
+			}
+		.icon.gps .aus {
+			display: inline;
+		}
+			.icon.gps.online .aus {
+				display: none;
+			}
+	.icon.fuel {
+		background-image: url(../images/start/fuel.png);
+	}
+	.icon.settings {
+		background-image: url(../images/start/settings.png);
+	}
+	
+#app-status-ul {
+	z-index: 90;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+	
+	#app-status-ul li {
+		line-height: 28px;
+		background: #ff8e2a;
+		color: #fff;
+		font-size: 14px;
+		padding: 5px 10px;
+		margin-bottom: 1px;
+	}
+	
+	#app-status-ul li a {
+		color: #fff;
+	}

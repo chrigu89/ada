@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+	<!-- https://build.phonegap.com/docs/config-xml -->
+
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "de.design-busse.ada"
+		versionCode = "42"
+		version   = "1.5">
+		
+	<name>AdAGo</name>
+	<description>Insider Angebote - Geheimtips - viele Vorteile Abseits der Autobahn</description>
+	<author href="http://www.design-busse.de" email="cb@design-busse.de">Christian Busse</author>
+
+	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+		<string>42</string>
+	</gap:config-file>
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+		 
+	<!-- 
+		PHONEGAP BUILD NOW SUPPORTS ALL PHONEGAP PREFERENCES
+		http://community.phonegap.com/nitobi/topics/phonegap_build_now_supports_all_phonegap_preferences?rfm=1
+	-->
+
+	<!-- SPLASH SCREENS -->
+		<gap:splash src="splash.png"/>
+
+		<!-- iPhone and iPod touch -->
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/iphone-portrait.png" width="320" height="480" />
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/iphone-portrait.png" width="640" height="960" />
+		<!-- iPad -->
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/ipad-portrait.png" width="768" height="1024" />
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/ipad-landscape.png" width="1024" height="768" />
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/iphone-5-portrait.png" width="640" height="1136" />
+		<!-- Retina iPad -->
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/ipad-portrait.png" width="1536" height="2048" />
+		<gap:splash gap:platform="ios" src="gfx/splash/ios/ipad-landscape.png" width="2048" height="1536" />
+
+
+		<!-- Android -->
+		<gap:splash gap:platform="android" src="gfx/splash/android/ldpi.9.png" gap:qualifier="ldpi" width="240" height="320"/>
+		<gap:splash gap:platform="android" src="gfx/splash/android/mdpi.9.png" gap:qualifier="mdpi" width="320" height="480"/>
+		<gap:splash gap:platform="android" src="gfx/splash/android/hdpi.9.png" gap:qualifier="hdpi" width="480" height="720"/>
+		<gap:splash gap:platform="android" src="gfx/splash/android/xhdpi.9.png" gap:qualifier="nodpi" width="640" height="960"/>
+		<gap:splash gap:platform="android" src="gfx/splash/android/xhdpi.9.png" gap:qualifier="xhdpi" width="640" height="960"/>
+		<gap:splash gap:platform="android" src="gfx/splash/android/xxhdpi.9.png" gap:qualifier="xxhdpi" width="960" height="1440"/>
+		<!-- 
+		<gap:splash gap:platform="android" src="fr-xhdpi.png" gap:qualifier="fr-xhdpi" />
+		<gap:splash gap:platform="android" src="portrait-xxhdpi.png" gap:qualifier="port-xxhdpi" />
+		<gap:splash gap:platform="android" src="landscape-xxhdpi.png" gap:qualifier="land-xxhdpi" /> 
+		-->
+
+
+	<!-- GENERAL -->
+		<preference name="phonegap-version" value="3.7.0" /> <!-- cli-5.2.0 -->
+		
+		<preference name="orientation" value="default" /><!-- landscape, portrait, default (both) -->
+		<preference name="fullscreen" value="true" /><!-- true, false, supported for iOS6 and Android -->
+
+
+	<!-- iOS ONLY-->
+		<preference name="target-device" value="universal" /> <!-- universal (default), handheld, tablet -->
+		<preference name="prerendered-icon" value="true" /><!-- default:false, if true, iOS will not add it's gloss to app icon -->
+		<!-- <preference name="ios-statusbarstyle" value="black-opaque" />  default, black-opaque or black-translucent (doesn't quite work, see docs) -->
+		<preference name="detect-data-types" value="true" /><!-- default:true, whether tel-numbers or dates should be turned to links by the system -->
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="deployment-target" value="6.0" />
+
+
+		<preference name="show-splash-screen-spinner" value="false" />
+		<preference name="auto-hide-splash-screen" value="false" /> <!-- navigator.splashscreen.hide() should be called on device ready -->
+		<preference name="webviewbounce" value="false" /><!-- default:true -->
+		<!-- https://github.com/phonegap/build/issues/191 -->
+		<preference name="BackupWebStorage" value="none" /> <!-- default:cloud, none, local -->
+
+
+	<!-- ANDROID ONLY -->
+		<preference name="android-minSdkVersion" value="9" />	<!-- 2.1 and up -->
+		<preference name="splash-screen-duration" value="99999"/>
+		 <preference name="AndroidPersistentFileLocation" value="Compatibility" /> <!--Compatibility / Internal -->
+		<preference name="InAppBrowserStorageEnabled" value="true"/>
+		<preference name="AndroidExtraFilesystems" value="files,files-external,documents,cache,cache-external,root" />
+
+
+
+	<!-- ICONS -->
+		<icon src="icon.png" gap:role="default" />
+
+		<icon gap:platform="ios" src="icons/ios/icon-57.png" width="57" height="57" />
+		<icon gap:platform="ios" src="icons/ios/icon-72.png" width="72" height="72" />
+		<icon gap:platform="ios" src="icons/ios/icon-76.png" width="76" height="76" />
+		<icon gap:platform="ios" src="icons/ios/icon-114.png" width="114" height="114" />
+		<icon gap:platform="ios" src="icons/ios/icon-144.png" width="144" height="144" />
+		<icon gap:platform="ios" src="icons/ios/icon-152.png" width="152" height="152" />
+
+		<icon gap:platform="android" src="icons/android/icon-36-ldpi.png" gap:qualifier="ldpi" width="36" height="36"/>
+		<icon gap:platform="android" src="icons/android/icon-48-mdpi.png" gap:qualifier="mdpi" width="48" height="48"/>
+		<icon gap:platform="android" src="icons/android/icon-72-hdpi.png" gap:qualifier="hdpi" width="72" height="72"/>
+		<icon gap:platform="android" src="icons/android/icon-96-xhdpi.png" gap:qualifier="nodpi" width="96" height="96"/>
+		<icon gap:platform="android" src="icons/android/icon-96-xhdpi.png" gap:qualifier="xhdpi" width="96" height="96"/>
+		<icon gap:platform="android" src="icons/android/icon-144-xxhdpi.png" gap:qualifier="xxhdpi" width="144" height="144"/>
+		<icon gap:platform="android" src="icons/android/icon-192-xxxhdpi.png" gap:qualifier="xxxhdpi" width="192" height="192"/>
+
+		<icon gap:platform="winphone" src="icon.png" />
+
+
+	<!-- allow XHR access to external sites -->
+		<preference name="permissions" value="none"/>
+		
+		<access origin="*" />
+		<access origin=".*" />
+		<access origin="ada-go.com" />
+		<access origin="debug.phonegap.com" /> <!-- see: http://community.phonegap.com/nitobi/topics/error_whitelist_rejection -->
+		
+	<!-- PG 3.0 Plugins-->
+	
+		<gap:plugin name="org.apache.cordova.splashscreen" />
+		<gap:plugin name="org.apache.cordova.device" version="0.3.0" />
+		<gap:plugin name="com.phonegap.plugin.statusbar" />
+		<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" />
+		<gap:plugin name="org.apache.cordova.network-information" /> <!-- device on- /offline -->
+		<gap:plugin name="org.apache.cordova.geolocation" />
+		<gap:plugin name="org.transistorsoft.cordova.background-geolocation" />
+		
+
+	<!-- IOS -->
+		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+		<gap:config-file platform="ios" parent="UIStatusBarHidden">	
+			<true/>
+		</gap:config-file>
+		<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+			<false/>
+		</gap:config-file>
+
+
+	<!-- ANDROID -->	
+		<gap:config-file platform="android" parent="/manifest">
+			<supports-screens android:xlargeScreens="true" android:largeScreens="true" android:smallScreens="true" />
+			<application android:theme="@android:style/Theme.NoTitleBar" >
+				<activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+			</application>
+		</gap:config-file>
+
+</widget>

@@ -1,0 +1,63 @@
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*---------------------------Regular Image Slider---------------------------------------*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+body{
+	margin:0;
+	
+	
+}
+ul{
+	margin:0;
+	padding:0;
+	
+}
+.swipe {
+   
+}
+
+#slider__{
+	position:relative;
+	z-index:1;
+	
+	
+}
+.slider-heading{
+	color:#808080;	
+	padding-bottom:10px;
+	margin-top:-10px;
+	line-height:20px;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.slider-wrapper{
+	display:block!important;
+	max-width:100%!important;
+	height:auto;
+}
+
+.slider-container{
+	display:block!important;
+	max-width:100%!important;
+}
+
+
+.swipe-img{
+	height:auto;
+	width:100%!important;
+	display:block!important;
+}
+
+.swipe-text{
+	font-size:10px!important;
+	color:#FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-shadow:none;
+	color:#FFF!important;
+	position:relative;
+	padding-top:6px;
+	z-index:9999;
+	margin-top:-50px;
+	padding-bottom:15px;
+	font-weight:400;
+}
